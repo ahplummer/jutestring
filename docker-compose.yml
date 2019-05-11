@@ -9,7 +9,7 @@ services:
     ports:
       - 5555:5555
     volumes:
-      - ./jutestring/data:/jutestring/data
+      - ./data:/jutestring/data
     environment:
       - BASEURL=${BASEURL}
       - PORT=${PORT}

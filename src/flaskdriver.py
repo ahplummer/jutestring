@@ -6,7 +6,7 @@ from tornado.httpserver import HTTPServer
 from tornado.ioloop import IOLoop
 
 app = Flask(__name__)
-dbname = 'Urls.db'
+dbname = 'data/Urls.db'
 strlen = 10
 host = os.environ['BASEURL']
 port = os.environ['PORT']
