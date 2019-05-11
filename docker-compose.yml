@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+
+  jutestring:
+    container_name: jutestring.server
+    build:
+      context: .
+    ports:
+      - 5555:5555
+    volumes:
+      - ./jutestring/data:/jutestring/data
+    environment:
+      - BASEURL=${BASEURL}
+      - PORT=${PORT}
+    command: tail -f /dev/null
